@@ -1,0 +1,34 @@
+Main Objective of Analysis:
+The main objective of this analysis is to predict customer churnina telecommunications company. Specifically, we aimto buildaclassification model that can predict which customers arelikelyto churn, and identify the key drivers of churn. The benefitsof thisanalysis to the company are two-fold: first, it can help the
+company proactively take steps to retain customers who are at
+risk of churning; second, it can help the company identify areasfor improvement in their services or offerings, which canultimately lead to improved customer satisfaction and reducedchurn rates.
+
+Data Set Description:
+The data set we have chosen for this analysis is the Telco
+Customer Churn data set from Kaggle. This data set containsinformation on customer demographics, account information, andservice usage, as well as a binary indicator of whether or not thecustomer churned. The data set consists of 7,043 observationsand 21 features, including categorical, numerical, and binary
+variables. Our goal is to use this data set to build a model that
+accurately predicts customer churn and identifies the key driversof churn.
+
+Data Exploration and Cleaning:
+We began by exploring the data set to get a sense of the
+distribution of the features and identify any missing or
+inconsistent values. We found that there were no missing valuesin the data set, but there were several features with inconsistent
+or illogical values, such as customers with zero tenure but activeservices. We removed these observations and also droppedfeatures that were not relevant to our analysis, such as customerID. We also created dummy variables for categorical featuresandstandardized the numerical features to ensure that they wereonthe same scale.
+
+Model Training:
+We trained three different classifier models on the preprocesseddata: logistic regression, decision tree, and randomforest. Weused the same training and test splits to ensure fair comparisonbetween the models. We evaluated the models based on accuracy, precision, recall, and F1 score, and also used feature importancemeasures to identify the key drivers of churn.
+
+Model Recommendation:
+Based on our evaluation metrics and feature importance analysis, we recommend the random forest model as the final model forthis analysis. The random forest model achieved the highest
+accuracy and F1 score among the three models, and also providedinsight into the most important features for predicting churn, suchas contract type, tenure, and monthly charges. Key Findings and Insights:
+Our analysis revealed several key drivers of churn in the
+telecommunications industry. One important finding was that
+customers on month-to-month contracts were much morelikelyto churn than those on longer-term contracts, suggesting that thecompany could benefit from offering incentives for customerstosign longer-term contracts. We also found that customers withhigher monthly charges were more likely to churn, indicatingthat
+the company may need to reconsider their pricing strategy or
+offer more affordable options for certain customer segments. Other important features for predicting churn included tenure, internet service type, and payment method.
+
+Next Steps:
+One potential next step for this analysis is to explore the impact
+of additional features on the model performance, such as
+customer satisfaction ratings or service outage data. Another
+potential direction is to use the model to develop a targetedretention strategy for at-risk customers, or to conduct a cost-benefit analysis of such a strategy. Additionally, we recommendthat the company regularly track and update their customer churndata to ensure that their retention strategies remain effectiveover time.
