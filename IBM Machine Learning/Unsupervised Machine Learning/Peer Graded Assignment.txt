@@ -1,0 +1,39 @@
+Main Objective:
+The main objective of this analysis is to performclusteringonacustomer dataset to identify different customer segments andtheir buying behavior. 
+This will help in targeted marketing andincrease sales revenue for the business.
+
+Data Set Description:
+The dataset used in this analysis is the Online Retail Dataset
+which contains all the transactions occurring for a UK-basedonline retailer over a period of one year. The dataset consists of
+541,909 transactions and 8 attributes including Customer ID, Product Description, Quantity, and Unit Price. 
+The data is inastructured format and is available in a CSV file.
+
+Data Exploration and Cleaning:
+After loading the dataset, initial exploratory data analysis wasperformed to check for missing values, outliers, and
+inconsistencies. There were some missing values in the CustomerID column, which were dropped since they were deemed
+insignificant. In addition, some new features were createdliketotal purchase value and the number of unique products
+purchased by each customer.
+
+Unsupervised Models:
+Three unsupervised models were trained on the dataset toperform clustering. 
+The models used were K-Means Clustering, Hierarchical Clustering, and Gaussian Mixture Models (GMM). 
+K-Means Clustering was trained with different numbers of clusters, ranging from 2 to 10, to find the optimal number of clusters. 
+Hierarchical Clustering was performed using different linkagemethods such as Ward, Complete, and Average. 
+GMMwas trainedusing different covariance types including spherical, diagonal, andtied.
+
+Recommended Model: After comparing the performance of thethree models, the K-Means Clustering model with 4 clusterswasselected 
+as the final model since it provided the best results. 
+The model was able to identify 4 distinct customer segments withdifferent buying patterns.
+
+Key Findings and Insights:
+The analysis revealed four distinct customer segments withdifferent buying behaviors. The first segment consists of high-value customers who made large purchases, 
+the second segment contains customers who purchased frequently but with smallerorder values. 
+The third segment includes customers who madeonly a single purchase, and the fourth segment consists of
+customers who made small purchases but frequently. Thisinformation can be utilized to create targeted marketing
+strategies for each segment.
+
+Next Steps:
+In future analysis, more features like demographics data andwebsite usage data can be included to improve the model'sperformance. 
+Also, other clustering techniques such as DBSCANand Spectral Clustering can be explored to compare their
+performance with the models used in this analysis
+
